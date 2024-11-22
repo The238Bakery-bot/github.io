@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style5.css">
+    <title>Order - Bakery Bliss</title>
+</head>
+<body>
+    <audio id="background-music" autoplay loop>
+        <source src="2.mp3" type="audio/mpeg"> <!-- Replace with your audio file -->
+    
+    </audio>
+    <div id="background"></div>
+    <header class="header">
+        <div class="logo">
+            <h1>The 238 Bakery</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="order">
+        <h2>Đặt Hàng</h2>
+        <form action="https://formsubmit.co/thanhhuynguyenphuoc.23012007@gmail.com" method="POST" id="orderForm">
+            <div class="form-group">
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">SDT:</label>
+                <input type="tel" id="phone" name="SDT" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Địa Chỉ</label>
+                <textarea id="address" name="Địa chỉ" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="item">Chọn Sản Phẩm:</label>
+                <textarea type="text" id="name" name="Sản phẩm" required></textarea>
+            </div>
+            <button type="submit" class="btn">Đặt Hàng</button>
+        </form>
+        <div id="orderConfirmation" class="confirmation" style="display: none;"></div>
+    </main>
+
+
+
+    <script src="script5.js"></script>
+
+</body>
+</html>

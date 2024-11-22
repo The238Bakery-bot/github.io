@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style4.css">
+    <title>Bakery Menu</title>
+</head>
+<body>
+    <audio id="background-music" autoplay loop>
+        <source src="1.mp3" type="audio/mpeg"> <!-- Replace with your audio file -->
+    
+    </audio>
+
+    <header class="header">
+        <div class="logo">
+            <h1>The 238 Bakery</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="contact">
+            <h2>Liên hệ với bọn mình</h2>
+            <p>Nếu bạn có ý kiến hay đề xuất nào về dịch vụ , sản phẩm của chúng minh , xin hãy để lại lời nhắn để chúng mình cải thiện</p>
+            <form id="contactForm" class="contact-form" onsubmit="return showAlert()">
+                <label for="name">Tên:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Lời nhắn:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="btn">Gửi</button>
+            </form>
+            <div class="contact-info">
+                <h3>Thông tin liên hệ </h3>
+                <p><strong>Địa chỉ:</strong> 89/37/20 Nguyễn Hồng Đào, Phường 14 , Quận Tân Bình</p>
+                <p><strong>Số Điện Thoại:</strong> xxx-xxxx-xxxx</p>
+                <p><strong>Email:</strong> the238bakery@hotmail.com</p>
+            </div>
+        </section>
+    </main>
+
+
+    <script>
+        function showAlert() {
+            // Show the alert
+            document.getElementById('alert').classList.remove('hidden');
+            // Clear the form
+            document.getElementById('contactForm').reset();
+            // Prevent form submission
+            return false;
+        }
+    </script>
+        <script src="script4.js"></script>
+</body>
+</html>

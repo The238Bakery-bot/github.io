@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0fff0;
+}
+
+.header {
+    background-color: #013220; /* Gradient background */
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-family: 'Pacifico', cursive; /* Optional: Use a custom font */
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.navbar li {
+    margin-left: 20px;
+
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffeb3b; /* Change color on hover */
+}
+.menu {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.menu h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.cake-menu {
+    display: flex;
+    flex-wrap:nowrap ;
+}
+
+.container{
+	width:70%;
+	height:450px;
+	display:flex;
+	margin: 50px 0 0 200px;
+	justify-content:center;
+	gap: 10px;
+}
+
+.container img{
+	width:20%;
+	height:100%;
+	border-radius: 10px;
+	object-fit:cover;
+	border: 5px solid black;
+	transition: all ease-in-out 0.5s;
+}
+
+.container img:hover{
+	width:55%;
+}
+
+.about {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff; /* White background for the about section */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px; /* Margin around the section */
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.cake-icons {
+    font-size: 2em; /* Increase size of cake symbols */
+    margin-top: 30px; /* Space above the icons */
+}
+
+.cake-symbol {
+    margin: 0 10px; /* Space between symbols */
+}
+
+
+#snow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allow clicks to pass through */
+    z-index: 9999; /* Ensure snow is on top */
+}
+
+.snowflake {
+    position: absolute;
+    top: -10px; /* Start above the viewport */
+    color: white;
+    user-select: none; /* Prevent selection */
+}

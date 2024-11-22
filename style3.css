@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9f9; 
+}
+.header {
+    background-color: #013220;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+}
+.logo h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-family: 'Pacifico', cursive; /* Optional: Use a custom font */
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffeb3b;
+}
+
+.menu {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.menu h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+}
+
+.menu-card {
+    position: relative;
+    width: 250px; /* Card width */
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.menu-card1 {
+    position: relative;
+    width: 75%; /* Card width */
+    height: 75%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.menu-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.menu-card:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.menu-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.menu-card:hover .menu-info {
+    opacity: 1; /* Show info on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ff7f50; /* Coral color */
+    color: white;
+}
+
+#snow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allow clicks to pass through */
+    z-index: 9999; /* Ensure snow is on top */
+}
+
+.snowflake {
+    position: absolute;
+    top: -10px; /* Start above the viewport */
+    color: white;
+    user-select: none; /* Prevent selection */
+}

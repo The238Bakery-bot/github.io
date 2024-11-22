@@ -74,8 +74,8 @@ body {
 
 .menu-card1 {
     position: relative;
-    width: 75%; /* Card width */
-    height: 75%;
+    width: 100%; /* Card width */
+    height: 100%;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
